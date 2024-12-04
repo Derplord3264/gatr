@@ -14,28 +14,30 @@ body {
 
 .navbar {
     background-color: #1a1a1a;
-    position: fixed;
+    position: fixed; /* Make navbar fixed */
     width: 100%;
-    top: 0;
+    top: 0; /* Position it at the top */
     left: 0;
-    z-index: 1000;
+    z-index: 1000; /* Ensure it stays above other content */
     padding: 10px 0;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space out logo and navigation */
 }
 
-.logo {
-    color: #00bf63;
-    text-align: center;
-    font-size: 2.5em;
+.responsive-title {
+    max-width: 100%; /* Ensure it doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center it */
 }
 
 .navbar ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    display: flex; /* Use flexbox for horizontal layout */
 }
 
 .navbar ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -52,8 +54,8 @@ body {
 
 .hero {
     text-align: center;
-    padding: 80px 20px;
-    margin-top: 60px; /* Add margin to avoid overlap with the navbar */
+    padding: 80px 20px; /* Normal padding */
+    margin-top: 60px; /* Adjusted margin to prevent overlap with the navbar */
 }
 
 .hero h2 {
