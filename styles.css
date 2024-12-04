@@ -18,8 +18,8 @@ body {
 }
 
 .responsive-title {
-    max-width: 10%; /* Set a smaller max width for the logo */
-    max-height: 10%;
+    max-width: 65%; /* Set a smaller max width for the logo */
+    max-height: 65%;
     height: auto; /* Maintain aspect ratio */
 }
 
