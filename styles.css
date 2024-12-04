@@ -14,12 +14,13 @@ body {
 
 .logo-container {
     text-align: center; /* Center the logo */
+    padding-top: 75px;
     padding: 20px 0; /* Add some padding around the logo */
 }
 
 .responsive-title {
-    max-width: 65%; /* Set a smaller max width for the logo */
-    max-height: 65%;
+    max-width: 55%; /* Set a smaller max width for the logo */
+    max-height: 55%;
     height: auto; /* Maintain aspect ratio */
 }
 
