@@ -12,9 +12,14 @@ body {
     margin: 0 auto;
 }
 
-header {
+.navbar {
     background-color: #1a1a1a;
-    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
 }
 
 .logo {
@@ -23,36 +28,37 @@ header {
     font-size: 2.5em;
 }
 
-nav ul {
+.navbar ul {
     list-style: none;
     padding: 0;
     text-align: center;
 }
 
-nav ul li {
+.navbar ul li {
     display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
+.navbar ul li a {
     color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
+.navbar ul li a:hover {
     color: #00bf63;
 }
 
 .hero {
     text-align: center;
     padding: 80px 20px;
+    margin-top: 60px; /* Add margin to avoid overlap with the navbar */
 }
 
 .hero h2 {
     color: #00bf63;
-    font-size: 2.5em;
+    font-size: 3em; /* Increased font size for prominence */
     margin: 0 0 10px;
 }
 
@@ -83,13 +89,14 @@ nav ul li a:hover {
     animation-fill-mode: forwards;
 }
 
-.features, .about, .contact {
+.features, .about, .contact, .estimator {
     text-align: center;
 }
 
-.features h2, .about h2, .contact h2 {
+.features h2, .about h2, .contact h2, .estimator h2 {
     color: #00bf63;
     margin-bottom: 20px;
+    font-size: 2.5em; /* Increased font size for section headers */
 }
 
 .feature {
@@ -153,4 +160,34 @@ footer {
 
 .features .feature:nth-child(3) {
     animation-delay: 0.6s;
+}
+
+.estimator {
+    text-align: center;
+}
+
+.estimator input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 250px;
+}
+
+.estimator button {
+    background-color: #00bf63;
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.estimator button:hover {
+    background-color: #009f54;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #00bf63;
 }
