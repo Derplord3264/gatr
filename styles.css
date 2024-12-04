@@ -12,6 +12,16 @@ body {
     margin: 0 auto;
 }
 
+.logo-container {
+    text-align: center; /* Center the logo */
+    padding: 20px 0; /* Add some padding around the logo */
+}
+
+.responsive-title {
+    max-width: 100%; /* Ensure it doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .navbar {
     background-color: #1a1a1a;
     position: fixed; /* Make navbar fixed */
@@ -20,24 +30,16 @@ body {
     left: 0;
     z-index: 1000; /* Ensure it stays above other content */
     padding: 10px 0;
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center vertically */
-    justify-content: space-between; /* Space out logo and navigation */
-}
-
-.responsive-title {
-    max-width: 100%; /* Ensure it doesn't overflow */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 auto; /* Center it */
 }
 
 .navbar ul {
     list-style: none;
     padding: 0;
-    display: flex; /* Use flexbox for horizontal layout */
+    text-align: center;
 }
 
 .navbar ul li {
+    display: inline;
     margin: 0 15px;
 }
 
