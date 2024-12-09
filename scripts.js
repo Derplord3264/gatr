@@ -1,6 +1,6 @@
 import { HfInference } from "@huggingface/inference";
 
-const client = new HfInference("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"); // Replace with your own API key
+const client = new HfInference("<insert key>"); // Replace with your own API key
 
 document.getElementById("estimateButton").addEventListener("click", async () => {
     const investment = document.getElementById("investment").value;
